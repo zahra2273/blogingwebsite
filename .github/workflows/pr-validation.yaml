@@ -23,10 +23,10 @@ jobs:
           npm install htmlhint stylelint stylelint-config-standard
 
       - name: Lint HTML
-        run: npx htmlhint "src/*/.html"
+        run: npx htmlhint "src/**/*.html"
 
       - name: Lint CSS
-        run: npx stylelint "styles/*/.css"
+        run: npx stylelint "styles/**/*.css"
 
   build:
     name: Build Static Website
